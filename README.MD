@@ -1,4 +1,5 @@
 使用须知：
+
 1、修改sendMail.py文件。SMTP_host、from_account、from_passwd、to_account1 
 	等4个变量为实际邮件服务器地址、发送地址、密码、收件人。
 	
