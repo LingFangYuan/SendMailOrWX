@@ -4,17 +4,13 @@ from email.header import Header
 import datetime
 import sys
 
-SMTP_host = "182.168.100.50:25"
-from_account = "gialen_reports@gialen.com"
-from_passwd = "gialen%989219"
+SMTP_host = "IP:PORT"
+from_account = "******@***.com"
+from_passwd = "*****"
 
-to_account1 = "lingfangyuan@gialen.com,panjinlong@gialen.com,zhouhuidong@gialen.com,liqisheng@gialen.com"
+to_account1 = "********@****.com,*********@*****.com"
 
-# SMTP_host = "smtp.qq.com"
-# from_account = "410982322@qq.com"
-# from_passwd = "znafobmgubglbjge"
-#
-# to_account1 = "410982322@qq.com,786173189@qq.com"
+
 
 
 def send_email(SMTP_host, from_account, from_passwd, to_account, subject, content, mail_type):

@@ -2,8 +2,8 @@ import json
 import sendMail
 import requests
 
-v_corpid = "ww485015c7af48eeb6"
-v_secret = "HcVMhHOqiEflXCuVZKd_pIUb5XsH1gQGIutN0ux7mrM"
+v_corpid = "******"
+v_secret = "***************"
 
 
 class WeChatPub:
@@ -80,7 +80,7 @@ def send_wx(content, type, to_account):
         to_account = to_account.replace(' ', '').replace(',', '|')
         wechat = WeChatPub()
         if type == "textcard":
-            wechat.send_msg_textcard(content, "https://mail.gialen.com:8443/coremail/", to_account)
+            wechat.send_msg_textcard(content, "https://mail.qq.com/cgi-bin/loginpage", to_account)
         elif type == "text":
             wechat.send_msg_text(content, to_account)
     except Exception as e:

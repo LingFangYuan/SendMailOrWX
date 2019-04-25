@@ -53,5 +53,5 @@ def get_text(subject, path):
     text = None
     if re:
         text = formattext(re, de)
-        text = subject + "\n" + text + '<a href="https://mail.gialen.com:8443/coremail/">查看详情</a>'
+        text = subject + "\n" + text + '<a href="https://mail.qq.com/cgi-bin/loginpage">查看详情</a>'
     return text

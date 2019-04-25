@@ -3,10 +3,13 @@ import sys
 import datetime
 import pandas as pd
 
+username = '***'
+password = '*****'
+datebase = '*****'
 
 class myoracle:
 
-    def __init__(self, user="ADMIN", passwd="ADMIN2018", db="SHOPPINGMALL"):
+    def __init__(self, user=username, passwd=password, db=datebase):
         self.user = user
         self.passwd = passwd
         self.db = db
@@ -20,7 +23,7 @@ class myoracle:
         获取连接和游标
         :return:
         """
-        self.conn = cx_Oracle.connect('ADMIN/ADMIN2018@SHOPPINGMALL')  # 连接数据库
+        self.conn = cx_Oracle.connect(user + '/' + passwd + '@' + db)  # 连接数据库
         self.c = self.conn.cursor()  # 获取cursor
 
     def close_conn(self):

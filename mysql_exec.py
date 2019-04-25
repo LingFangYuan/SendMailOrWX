@@ -3,11 +3,11 @@ import sys
 import datetime
 import pandas as pd
 
-host = '10.255.2.17'
+host = '****'
 port = 3306
-user = 'APP_REPORT'
-passwd = 'report#2018'
-database = 'shopping_mall_gialen_sc'
+user = '******'
+passwd = '*******'
+database = '******'
 
 
 def get_db():
